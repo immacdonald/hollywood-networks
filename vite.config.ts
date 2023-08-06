@@ -20,6 +20,6 @@ function devConfig() {
 function prodConfig() {
   return {
     plugins: [react()],
-    base: './'
+    base: '/hollywood-networks'
   }
 }
