@@ -1,21 +1,21 @@
-import './App.css'
-import { Link, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Test from './components/Test';
+import style from './App.module.scss';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <nav>
-        <div className="menu">
-          <Link to="/">Home</Link>
-          <Link to="/test">Test</Link>
-        </div>
-      </nav>
-      <Routes>
-        <Route path="/" Component={Home} />
-        <Route path="/test" Component={Test} />
-      </Routes>
+    <div className={style.app}>
+      <Header />
+      <div className={style.content}>
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/about" Component={About} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   )
 }

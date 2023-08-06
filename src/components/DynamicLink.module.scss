@@ -1,0 +1,9 @@
+@use "../styles" as *;
+
+.link {
+    &.selected {
+        a {
+		    color: var(--c-primary);
+        }
+    }
+}

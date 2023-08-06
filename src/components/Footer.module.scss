@@ -1,0 +1,14 @@
+@use "../styles" as *;
+
+.footer {
+	justify-content: center;
+	display: flex;
+	border-top: 1px solid var(--c-border-primary);
+    width: 100%;
+	height: $footerHeight;
+
+	.footerContent {
+		margin-top: 6px;
+		font-size: 14px;
+	}
+}
