@@ -1,14 +1,20 @@
 @use "../styles" as *;
 
 .footer {
-	justify-content: center;
+	width: 100%;
 	display: flex;
+	justify-content: center;
 	border-top: 1px solid var(--c-border-primary);
-    width: 100%;
 	height: $footerHeight;
+}
 
-	.footerContent {
-		margin-top: 6px;
-		font-size: 14px;
-	}
+.container {
+	@extend .full;
+	display: flex;
+	justify-content: center;
+}
+
+.content {
+	margin-top: $xs;
+	font-size: $smFont;
 }

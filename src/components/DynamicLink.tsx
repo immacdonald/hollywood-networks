@@ -5,7 +5,7 @@ import classNames from 'classnames';
 interface Props {
     label: string;
     link: string;
-  }
+}
 
 function DynamicLink(props : Props) {
     const location = useLocation();

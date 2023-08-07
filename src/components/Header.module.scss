@@ -1,47 +1,55 @@
 @use "../styles" as *;
 
 .header {
+	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: $headerHeight;
 	border-bottom: 1px solid var(--c-border-primary);
 	background-color: var(--c-background-primary);
+}
+
+.content {
+	@extend .full;
+	display: flex;
+	align-items: center;
 	padding: 0 $md;
 }
 
-.headerContent {
-	display: flex;
-	align-items: center;
-	& > a {
-		display: none;
-	}
+.logo {
+	font-weight: 900;
+	font-style: italic;
+	font-size: $lgFont;
+	user-select: none;
 }
 
-.headerNavigation {
+.navigation {
 	display: flex;
 	flex-grow: 1;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.headerNavigationLinks {
+.navLinks {
 	display: flex;
 	align-items: center;
+	gap: $md;
+	margin-left: $xxl;
+
+	> div {
+		padding: $sm;
+		border-radius: $sm;
+	}
 
 	a {
 		text-decoration: none;
-		font-weight: 700;
-		font-size: $lgFont;
+		font-size: $mdFont;
 		color: var(--c-text-primary);
-		padding: $sm;
 		transition: color var(--t-fast);
 
 		&:hover {
 			color: var(--c-primary-light);
-		}
-
-		& + * {
-			margin-left: $sm;
 		}
 	}
 }
