@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
@@ -11,15 +10,19 @@ export default defineConfig(({ command }) => {
   }
 })
 
+const baseConfig = {
+  plugins: [react()]
+}
+
 function devConfig() {
   return {
-    plugins: [react()]
+    ...baseConfig
   }
 }
 
 function prodConfig() {
   return {
-    plugins: [react()],
+    ...baseConfig,
     base: '/hollywood-networks'
   }
 }
