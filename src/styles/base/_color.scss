@@ -1,13 +1,19 @@
+@use 'sass:color';
+
+$primary: rgb(179, 29, 29);
+
 :root {
 	--c-text-primary: #333;
 	--c-text-action: #636363;
+	--c-text-light: rgb(245, 245, 245);
 
-	--c-primary-bright: rgb(252, 114, 114);
-	--c-primary-light: rgb(228, 67, 67);
-	--c-primary: rgb(196, 36, 36);
-	--c-primary-dark: rgb(169, 34, 34);
+	--c-primary-fade: #{color.scale($primary, $lightness: 50%)};
+	--c-primary-light: #{color.scale($primary, $lightness: 10%)};
+	--c-primary: #{$primary};
+	--c-primary-dark: #{color.scale($primary, $lightness: -25%)};
 
-	--c-background-primary: #F5F5F5;
+	--c-background-primary: #f8f8f8;
+	--c-background-dark: #272727;
 	--c-border-primary: #eee;
 
 	--t-fast: 0.25s ease;

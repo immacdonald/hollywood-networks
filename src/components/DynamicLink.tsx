@@ -12,15 +12,8 @@ function DynamicLink(props : Props) {
 
     const { label, link } = props;
 
-    const linkClasses = classNames(
-        style.link,
-        {
-            [style.selected]: link === location.pathname,
-        },
-    );
-
     return (
-        <div className={linkClasses}>
+        <div className={style.link} data-selected={link === location.pathname || null}>
             <Link to={link}>{label}</Link>
         </div>
     );

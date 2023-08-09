@@ -9,12 +9,12 @@ function App() {
   return (
     <div className={style.app}>
       <Header />
-      <div className={style.content}>
+      <main className={style.content}>
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/about" Component={About} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </div>
   )

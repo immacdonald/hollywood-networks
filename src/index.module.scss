@@ -31,16 +31,17 @@ html {
 }
 
 ::selection {
-	background: var(--c-primary-bright);
+	background: var(--c-primary-fade);
 }
 
 body {
     width: 100vw;
     height: 100vh;
-	font-family: "Be Vietnam Pro", sans-serif;
+	font-family: "proxima-nova", sans-serif;
 	font-size: $mdFont;
 	line-height: 1.5;
 	color: var(--c-text-primary);
 	background-color: var(--c-background-primary);
 	overflow-x: hidden;
+	position: fixed;
 }
