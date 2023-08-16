@@ -4,7 +4,6 @@ import {Sigma, LoadJSON} from 'react-sigma'
 
 const NetworkGraph: FC = () => {
     // Create the graph
-
     let baseURL = import.meta.env.BASE_URL;
     if(!baseURL.endsWith("/")) {
         baseURL = baseURL + "/";
