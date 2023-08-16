@@ -2,13 +2,14 @@ import { FC } from "react";
 
 import {Sigma, LoadJSON} from 'react-sigma'
 
-const SigmaGraph: FC = () => {
+const NetworkGraph: FC = () => {
     // Create the graph
+
     return (
         <Sigma style={{width:"100%", height:"600px", backgroundColor: "transparent", border: "1px solid black"}}>
-            <LoadJSON path="../data_fixed.json" />
+            <LoadJSON path={String(import.meta.env.BASE_URL) + "dataset.json"} />
         </Sigma>
     );
 };
 
-export default SigmaGraph;
+export default NetworkGraph;
