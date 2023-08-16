@@ -1,6 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
 import style from './DynamicLink.module.scss';
-import classNames from 'classnames';
 
 interface Props {
     label: string;
