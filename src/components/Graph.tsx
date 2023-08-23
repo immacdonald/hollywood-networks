@@ -10,12 +10,11 @@ const DemoGraph: React.FC<{}> = () => {
     const graphData : any = jsonGraph;
     
     graphData['nodes'].forEach((node : any, index : number) => {
-        graphData['nodes'][index].attributes.size = node.attributes.cust_size;
+        graphData['nodes'][index].attributes.size = Math.max(node.attributes[2] / 100, 1);
     });
 
     graphData['edges'].forEach((edge : any, index : number) => {
-        edge = edge;
-        graphData['edges'][index].attributes.size = 0.5;
+        graphData['edges'][index].attributes.size = edge.attributes.weight;
         graphData['edges'][index].attributes.color = "rgba(10, 10, 10, 0.05)"
     });
 
