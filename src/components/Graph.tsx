@@ -10,7 +10,7 @@ const DemoGraph: React.FC<{}> = () => {
     const graphData : any = jsonGraph;
     
     graphData['nodes'].forEach((node : any, index : number) => {
-        graphData['nodes'][index].attributes.size = Math.max(node.attributes.size, 1) / 5;
+        graphData['nodes'][index].attributes.size = node.attributes.cust_size;
     });
 
     graphData['edges'].forEach((edge : any, index : number) => {
