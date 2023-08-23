@@ -1,20 +1,48 @@
-import { FC } from "react";
+import React from "react";
 
-import {Sigma, LoadJSON} from 'react-sigma'
+import Graph from "graphology";
+import getNodeProgramImage from "sigma/rendering/webgl/programs/node.image";
+import { SigmaContainer, ControlsContainer, ZoomControl, FullScreenControl } from "@react-sigma/core";
+import jsonGraph from "../static/network.json";
+import style from './Graph.module.scss';
 
-const NetworkGraph: FC = () => {
-    // Create the graph
-    let baseURL = import.meta.env.BASE_URL;
-    if(!baseURL.endsWith("/")) {
-        baseURL = baseURL + "/";
-    }
-    console.log(baseURL)
+const DemoGraph: React.FC<{}> = () => {
+    const graphData : any = jsonGraph;
+    
+    graphData['nodes'].forEach((node : any, index : number) => {
+        graphData['nodes'][index].attributes.size = Math.max(node.attributes[2] / 100, 1);
+    });
 
+    graphData['edges'].forEach((edge : any, index : number) => {
+        graphData['edges'][index].attributes.size = edge.attributes.weight;
+        graphData['edges'][index].attributes.color = "rgba(10, 10, 10, 0.05)"
+    });
+
+    const graph = Graph.from(graphData as any);
     return (
-        <Sigma style={{width:"100%", height:"600px", backgroundColor: "transparent", border: "1px solid black"}}>
-            <LoadJSON path={baseURL + "dataset.json"} />
-        </Sigma>
+        <div style={{backgroundColor: "white"}}>
+        <SigmaContainer
+            className={style.sigmaGraph}
+            graph={graph}
+            settings={{
+                nodeProgramClasses: { image: getNodeProgramImage() },
+                labelDensity: 0.07,
+                labelGridCellSize: 60,
+                labelRenderedSizeThreshold: 15,
+                labelFont: "Lato, sans-serif",
+                zIndex: true,
+            }}
+        >
+            <ControlsContainer position={"bottom-right"} style={{position: "absolute", bottom: "16px", left: "16px"}}>
+                <ZoomControl />
+                <FullScreenControl />
+            </ControlsContainer>
+            {/*<ControlsContainer position={"top-right"}>
+                <SearchControl style={{ width: "200px" }} />
+            </ControlsContainer>*/}
+        </SigmaContainer>
+        </div>
     );
 };
 
-export default NetworkGraph;
+export default DemoGraph;
