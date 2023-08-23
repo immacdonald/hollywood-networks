@@ -1,4 +1,4 @@
-import SigmaGraph from "../components/Graph";
+//import SigmaGraph from "../components/Graph";
 import DemoGraph from "../components/DemoGraph";
 
 function Home() {

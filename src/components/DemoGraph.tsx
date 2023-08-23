@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import Graph from "graphology";
 import getNodeProgramImage from "sigma/rendering/webgl/programs/node.image";
-import { SigmaContainer, ControlsContainer, ZoomControl, FullScreenControl, SearchControl } from "@react-sigma/core";
+import { SigmaContainer, ControlsContainer, ZoomControl, FullScreenControl } from "@react-sigma/core";
 import jsonGraph from "../static/networktest.json";
 import style from './DemoGraph.module.scss';
 
@@ -13,7 +13,7 @@ const DemoGraph: React.FC<{}> = () => {
         graphData['nodes'][index].attributes.size = Math.max(node.attributes.size, 1) / 5;
     });
 
-    graphData['edges'].forEach((edge : any, index : number) => {
+    graphData['edges'].forEach((index : number) => {
         graphData['edges'][index].attributes.size = 0.5;
         graphData['edges'][index].attributes.color = "rgba(10, 10, 10, 0.05)"
     });
