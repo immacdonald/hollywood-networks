@@ -20,7 +20,7 @@ function About() {
             <p>
                 How widespread is the phenomenon of directors re-using the same crew?
                 Do renowned directors (and women/minority directors) tend to work persistently with
-                the same key collaborators and less recognized directors tend to
+                the same key collaborators? Do less recognized directors tend to
                 work with shifting groups of collaborators?
             </p>
         </div>

@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className={style.header}>
             <div className={style.content}>
-                <div className={style.logo}>Hollywood Networks</div>
+                <div className={style.logo}>Hollywood Director & Crew Networks</div>
                 <div className={style.navigation}>
                     <nav className={style.navLinks}>
                         <DynamicLink link="/" label="Home" />
