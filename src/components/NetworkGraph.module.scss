@@ -1,4 +1,4 @@
-@use "../styles" as *;
+@use '../styles' as *;
 
 .graph {
     width: 100%;
@@ -15,8 +15,7 @@
     position: relative;
 }
 
-[class*="sigma-container"] {
+[class*='sigma-container'] {
     height: 100%;
     width: 100%;
 }
-

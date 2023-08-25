@@ -3,20 +3,20 @@
 $primary: rgb(179, 29, 29);
 
 :root {
-	--c-text-primary: #333;
-	--c-text-action: #636363;
-	--c-text-light: rgb(245, 245, 245);
+    --c-text-primary: #333;
+    --c-text-action: #636363;
+    --c-text-light: rgb(245, 245, 245);
 
-	--c-primary-fade: #{color.scale($primary, $lightness: 50%)};
-	--c-primary-light: #{color.scale($primary, $lightness: 10%)};
-	--c-primary: #{$primary};
-	--c-primary-dark: #{color.scale($primary, $lightness: -25%)};
+    --c-primary-fade: #{color.scale($primary, $lightness: 50%)};
+    --c-primary-light: #{color.scale($primary, $lightness: 10%)};
+    --c-primary: #{$primary};
+    --c-primary-dark: #{color.scale($primary, $lightness: -25%)};
 
-	--c-background-primary: #f8f8f8;
-	--c-background-dark: #272727;
-	--c-border-primary: #eee;
+    --c-background-primary: #f8f8f8;
+    --c-background-dark: #272727;
+    --c-border-primary: #eee;
 
-	--t-fast: 0.25s ease;
-	--t-mid: 0.5s ease;
-	--t-slow: 1s ease;
+    --t-fast: 0.25s ease;
+    --t-mid: 0.5s ease;
+    --t-slow: 1s ease;
 }
