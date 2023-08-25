@@ -1,7 +1,12 @@
 @use '../' as *;
 
 // Headers
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     letter-spacing: 0.015em;
 }
 
@@ -22,8 +27,8 @@ h3 {
 
 // Links
 a {
-	text-decoration: none;
-	color: var(--c-primary);
+    text-decoration: none;
+    color: var(--c-primary);
 
     &:hover {
         text-decoration: underline;

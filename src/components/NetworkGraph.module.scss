@@ -1,0 +1,21 @@
+@use '../styles' as *;
+
+.graph {
+    width: 100%;
+    aspect-ratio: 1;
+    max-height: 75vh;
+    background-color: black;
+    border: 4px solid var(--c-border-primary);
+    border-radius: $md;
+}
+
+.sigmaGraph {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+[class*='sigma-container'] {
+    height: 100%;
+    width: 100%;
+}

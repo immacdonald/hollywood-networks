@@ -1,47 +1,49 @@
-@use "./styles" as *;
-@use"./styles/base";
+@use './styles' as *;
+@use './styles/base';
 
 * {
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 html {
     height: 100%;
-	display: block;
+    display: block;
     box-sizing: border-box;
 
-	&::-webkit-scrollbar {
-	  width: $sm;
-	}
-  
-	&::-webkit-scrollbar-track {
-	  background: var(--c-border-primary);
-	}
-  
-	&::-webkit-scrollbar-thumb {
-	  background-color: var(--c-border-primary);
-	  border-radius: $sm;
-	  border: $xs solid var(--c-border-primary);
-	}
+    &::-webkit-scrollbar {
+        width: $sm;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--c-border-primary);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--c-border-primary);
+        border-radius: $sm;
+        border: $xs solid var(--c-border-primary);
+    }
 }
 
 ::selection {
-	background: var(--c-primary-fade);
+    background: var(--c-primary-fade);
 }
 
 body {
     width: 100vw;
     height: 100vh;
-	font-family: "proxima-nova", sans-serif;
-	font-size: $mdFont;
-	line-height: 1.5;
-	color: var(--c-text-primary);
-	background-color: var(--c-background-primary);
-	overflow-x: hidden;
-	position: fixed;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: $mdFont;
+    line-height: 1.5;
+    color: var(--c-text-primary);
+    background-color: var(--c-background-primary);
+    overflow-x: hidden;
+    position: fixed;
 }

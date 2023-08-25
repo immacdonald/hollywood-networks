@@ -6,7 +6,7 @@ interface Props {
     link: string;
 }
 
-function DynamicLink(props : Props) {
+function DynamicLink(props: Props) {
     const location = useLocation();
 
     const { label, link } = props;

@@ -5,7 +5,7 @@ function Footer() {
         <footer className={style.footer}>
             <div className={style.container}>
                 <div className={style.content}>
-                    <p>&copy; Ian MacDonald 2023</p>
+                    <p>&copy; Dr. Alexander Nwala & Ian MacDonald 2023</p>
                 </div>
             </div>
         </footer>
