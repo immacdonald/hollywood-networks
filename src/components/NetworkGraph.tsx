@@ -41,7 +41,7 @@ interface GraphData {
 }
 
 const NetworkGraph: React.FC<unknown> = () => {
-    const graphData: GraphData = jsonGraph as GraphData;
+    const graphData: GraphData = jsonGraph as unknown as GraphData;
 
     // Scale each node to have the size of cust_size attribute within a normalized range
     graphData.nodes.forEach((node, index) => {
