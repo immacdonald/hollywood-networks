@@ -45,16 +45,22 @@ const NetworkGraph: React.FC<unknown> = () => {
 
     // Scale each node to have the size of cust_size attribute within a normalized range
     graphData.nodes.forEach((node, index) => {
-        graphData.nodes[index].attributes.size = Math.max(node.attributes[2] / 100, 1);
+        graphData.nodes[index].attributes.size = Math.max(node.attributes[2] / 50, 1);
     });
 
     // Size each edge based on the weight and update the edge color to be translucent
     graphData.edges.forEach((edge, index) => {
-        graphData.edges[index].attributes.size = edge.attributes.weight;
-        graphData.edges[index].attributes.color = 'rgba(10, 10, 10, 0.05)';
+        graphData.edges[index].attributes.size = edge.attributes.weight * 25;
+        graphData.edges[index].attributes.color = 'rgba(0, 0, 0, 0.008)';
     });
 
     const graph = Graph.from(graphData as unknown as AbstractGraph<NodeAttributes, EdgeAttributes, GraphAttributes>);
+
+    const nodeClicked: React.FC = (graphNode : unknown) => {
+        const imdbURL : string = `https://www.imdb.com/name/${graphNode}/`
+        window.open(imdbURL, '_blank');
+        return null;
+    }
 
     const GraphEvents: React.FC = () => {
         const registerEvents = useRegisterEvents();
@@ -63,7 +69,7 @@ const NetworkGraph: React.FC<unknown> = () => {
           // Register the events
           registerEvents({
             // node events
-            clickNode: (event) => console.log("clickNode", event.event, event.node, event.preventSigmaDefault),
+            clickNode: (event) => nodeClicked(event.node),
             /*doubleClickNode: (event) => console.log("doubleClickNode", event.event, event.node, event.preventSigmaDefault),
             rightClickNode: (event) => console.log("rightClickNode", event.event, event.node, event.preventSigmaDefault),
             wheelNode: (event) => console.log("wheelNode", event.event, event.node, event.preventSigmaDefault),

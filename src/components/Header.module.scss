@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: $headerHeight;
+    height: $headerHeight !important;
     border-bottom: 1px solid var(--c-border-primary);
     background-color: var(--c-background-primary);
 }

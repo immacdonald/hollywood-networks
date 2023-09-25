@@ -5,3 +5,5 @@ dev:
 
 deploy:
 	gh workflow run 'Deploy' --ref "$(GIT_BRANCH)"
+
+.PHONY: dev deploy

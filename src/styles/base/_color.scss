@@ -1,6 +1,7 @@
 @use 'sass:color';
 
-$primary: rgb(179, 29, 29);
+//$primary: #b7a387;
+$primary: #66ad8f;
 
 :root {
     --c-text-primary: #333;
@@ -14,7 +15,7 @@ $primary: rgb(179, 29, 29);
 
     --c-background-primary: #f8f8f8;
     --c-background-dark: #272727;
-    --c-border-primary: #eee;
+    --c-border-primary: #e0f0e0;
 
     --t-fast: 0.25s ease;
     --t-mid: 0.5s ease;
