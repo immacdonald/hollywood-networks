@@ -22,13 +22,13 @@ html {
     }
 
     &::-webkit-scrollbar-track {
-        background: var(--c-border-primary);
+        background: var(--c-border-light);
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: var(--c-border-primary);
+        background-color: var(--c-border-light);
         border-radius: $sm;
-        border: $xs solid var(--c-border-primary);
+        border: $xs solid var(--c-border-light);
     }
 }
 
@@ -43,6 +43,6 @@ body {
     font-size: $mdFont;
     line-height: 1.5;
     color: var(--c-text-primary);
-    background-color: var(--c-background-primary);
+    background-color: var(--c-background);
     overflow-x: hidden;
 }

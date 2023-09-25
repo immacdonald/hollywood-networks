@@ -12,6 +12,9 @@
     @extend .full;
     flex-grow: 1;
     padding: 0 $md;
-    padding-bottom: $lg;
-    margin-top: $md;
+
+    > div {
+        box-sizing: border-box;
+        padding: $lg 0;
+    }
 }
