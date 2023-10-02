@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import Graph from 'graphology';
 import getNodeProgramImage from 'sigma/rendering/webgl/programs/node.image';
-import { SigmaContainer, ControlsContainer, ZoomControl, FullScreenControl, useRegisterEvents } from '@react-sigma/core';
+import { SigmaContainer, ControlsContainer, ZoomControl, FullScreenControl, SearchControl, useRegisterEvents } from '@react-sigma/core';
 import jsonGraph from '../static/network_revised.json';
 import style from './NetworkGraph.module.scss';
 import AbstractGraph from 'graphology';
@@ -131,14 +131,17 @@ const NetworkGraph: React.FC<unknown> = () => {
             >
                 <ControlsContainer
                     position={'bottom-right'}
-                    style={{ position: 'absolute', bottom: '16px', left: '16px' }}
+                    style={{ position: 'absolute', bottom: '32px', left: '16px' }}
                 >
                     <ZoomControl />
                     <FullScreenControl />
                 </ControlsContainer>
-                {/*<ControlsContainer position={"top-right"}>
+                <ControlsContainer
+                    position={"top-left"}
+                    style={{ position: 'absolute', bottom: '8px', left: '16px' }}
+                >
                     <SearchControl style={{ width: "200px" }} />
-                </ControlsContainer>*/}
+                </ControlsContainer>
 
                 <GraphEvents />
             </SigmaContainer>
