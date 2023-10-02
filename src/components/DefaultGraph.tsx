@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import Graph from "graphology";
 import { Attributes } from "graphology-types";
 
 import { useSigma, useRegisterEvents, useLoadGraph, useSetSettings } from "@react-sigma/core";

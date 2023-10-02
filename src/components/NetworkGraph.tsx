@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import Graph from 'graphology';
 import getNodeProgramImage from 'sigma/rendering/webgl/programs/node.image';
-import { SigmaContainer, ControlsContainer, ZoomControl, FullScreenControl, SearchControl, useRegisterEvents, useSetSettings } from '@react-sigma/core';
+import { SigmaContainer, ControlsContainer, ZoomControl, FullScreenControl, SearchControl, useRegisterEvents } from '@react-sigma/core';
 import jsonGraph from '../static/network_revised.json';
 import style from './NetworkGraph.module.scss';
 import AbstractGraph from 'graphology';
