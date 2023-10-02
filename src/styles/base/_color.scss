@@ -13,9 +13,11 @@ $primary: #66ad8f;
     --c-primary: #{$primary};
     --c-primary-dark: #{color.scale($primary, $lightness: -25%)};
 
-    --c-background-primary: #f8f8f8;
+    --c-background-light: #f8f8f8;
+    --c-background: #f0f0f0;
     --c-background-dark: #272727;
-    --c-border-primary: #e0f0e0;
+    --c-border-light: rgb(226, 226, 226);
+    --c-border-dark: #272727;
 
     --t-fast: 0.25s ease;
     --t-mid: 0.5s ease;
