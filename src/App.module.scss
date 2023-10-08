@@ -9,12 +9,14 @@
 }
 
 .content {
-    @extend .full;
-    flex-grow: 1;
-    padding: 0 $md;
+    height: calc(100% - $headerHeight - $footerHeight);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
 
     > div {
         box-sizing: border-box;
-        padding: $lg 0;
+        @extend .full;
     }
 }
