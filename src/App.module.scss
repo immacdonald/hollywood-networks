@@ -12,11 +12,10 @@
     min-height: calc(100% - #{$headerHeight} - #{$footerHeight});
     width: 100%;
     flex: 1 0 auto;
-    display: flex;
-    justify-content: center;
 
     > div {
-        @extend .full;
-        padding: $lg 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

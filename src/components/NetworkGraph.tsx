@@ -10,7 +10,7 @@ import {
     SearchControl,
     useRegisterEvents
 } from '@react-sigma/core';
-import jsonGraph from '../static/network_revised.json';
+import jsonGraph from '../static/director_crew_network.json';
 import style from './NetworkGraph.module.scss';
 import AbstractGraph from 'graphology';
 import { GraphDefault } from './DefaultGraph';
@@ -174,8 +174,8 @@ const NetworkGraph: React.FC<unknown> = () => {
                 {legendList.map((legend) => {
                     return (
                         <div className={style.legendKey} key={legend.key}>
-                            {legend.label} (<strong>{legend.key}</strong>)
                             <span style={{ backgroundColor: legend.color }}></span>
+                            {legend.label} (<strong>{legend.key}</strong>)
                         </div>
                     );
                 })}

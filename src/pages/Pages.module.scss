@@ -1,0 +1,12 @@
+@use '../styles' as *;
+@use 'sass:math';
+
+.section {
+    padding: $lg 5%;
+    background-color: var(--c-background-light);
+}
+
+.altSection {
+    @extend .section;
+    background-color: var(--c-background);
+}
