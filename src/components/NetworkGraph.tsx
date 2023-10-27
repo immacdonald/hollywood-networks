@@ -148,7 +148,7 @@ const NetworkGraph: React.FC<unknown> = () => {
                         zIndex: true
                     }}
                 >
-                    <GraphDefault order={100} probability={0.1} graph={graph} />
+                    <GraphDefault graph={graph} />
                     <ControlsContainer
                         position={'bottom-right'}
                         style={{ position: 'absolute', bottom: '32px', left: '16px' }}

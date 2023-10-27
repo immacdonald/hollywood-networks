@@ -12,23 +12,33 @@ h6 {
 
 h1 {
     margin: $sm 0;
+    margin-top: $xl;
     font-size: 32px;
 }
 
 h2 {
     margin: $sm 0;
+    margin-top: $xl;
     font-size: 24px;
 }
 
 h3 {
     margin: $xs 0;
+    margin-top: $xl;
     font-size: 20px;
+}
+
+p {
+    margin-top: $md;
+    margin-bottom: $md;
+    line-height: 2em;
 }
 
 // Links
 a {
     text-decoration: none;
     color: var(--c-primary);
+    font-weight: 500;
 
     &:hover {
         text-decoration: underline;

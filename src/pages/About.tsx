@@ -3,24 +3,13 @@ function About() {
         <div>
             <h1>About</h1>
             <p>
-                Some renowned film directors are known to work persistently with the same key collaborators. For
-                example, Wes Anderson employed the same movie score composer, Alexandre Desplat, for multiple movies,
-                including <i>The French Dispatch</i>, <i>Isle of Dogs</i>, and <i>The Grand Budapest Hotel</i>.
+                The Hollywood Director-Crew Networks website was built by <a href="https://www.ianmacdonald.me/">Ian MacDonald</a>, a junior studying Computer Science and Film & Media Studies at <a href="https://www.wm.edu/">William & Mary</a>. The network model was created by <a href="https://alexandernwala.com/">Dr. Alexander C. Nwala</a>, assistant professor of Data Science at William & Mary, based on a research interest and idea of <a href="https://www.wm.edu/as/english/facultystaff/knight_a.php">Dr. Arthur Knight</a>, Associate Professor, American Studies and English at William & Mary.
             </p>
-            <br />
             <p>
-                Shifting ground to questions of access and representation: Some directors hire collaborators from groups
-                that were historically prevented from working in the mainstream U.S. film industry &#8212; e.g., African
-                Americans, women. Among the reasons given by such directors is that this opens opportunities and
-                diversifies the U.S. film industry creative labor pool and, thus, expands the perspectives represented
-                in and benefiting from U.S. movies and TV.
+                This project was initially developed as a <a href="https://github.com/anwala/teaching-network-science/tree/main/spring-2023/homework/hw5-group">group project</a> in an <a href="https://github.com/anwala/teaching-network-science/blob/main/spring-2023/README.md">undergraduate Network Science course</a> taught by Dr. Alexander Nwala.
             </p>
-            <br />
-            <h3>Key Questions</h3>
             <p>
-                How widespread is the phenomenon of directors re-using the same crew? Do renowned directors (and
-                women/minority directors) tend to work persistently with the same key collaborators? Do less recognized
-                directors tend to work with shifting groups of collaborators?
+                We thank the William & Mary Office of the Provost for funding this project through the 2023 Faculty Summer Research Grant Award.
             </p>
         </div>
     );

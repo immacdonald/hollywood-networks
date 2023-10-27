@@ -5,18 +5,9 @@ import { Attributes } from 'graphology-types';
 import { useSigma, useRegisterEvents, useLoadGraph, useSetSettings } from '@react-sigma/core';
 
 export interface GraphDefaultProps {
-    /**
-     * Number of node to generates
-     */
-    order: number;
-    /**
-     * Probability that two nodes are linked
-     */
-    probability: number;
-
     graph: any;
 }
-export const GraphDefault: React.FC<GraphDefaultProps> = ({ order, probability, graph }) => {
+export const GraphDefault: React.FC<GraphDefaultProps> = ({ graph }) => {
     const sigma = useSigma();
     const registerEvents = useRegisterEvents();
     const loadGraph = useLoadGraph();
@@ -31,7 +22,7 @@ export const GraphDefault: React.FC<GraphDefaultProps> = ({ order, probability, 
             clickNode: (event) => setHoveredNode(event.node),
             clickStage: () => setHoveredNode(null)
         });
-    }, [loadGraph, registerEvents, order, probability]);
+    }, [loadGraph, registerEvents]);
 
     useEffect(() => {
         setSettings({
