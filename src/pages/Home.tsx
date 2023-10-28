@@ -1,4 +1,4 @@
-import React, { useMemo, ReactNode } from 'react';
+import { useMemo, ReactNode } from 'react';
 import NetworkGraph from '../components/NetworkGraph';
 import Latex from 'react-latex-next';
 import style from './Pages.module.scss';
