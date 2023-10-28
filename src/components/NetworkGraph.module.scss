@@ -12,7 +12,7 @@ $legendWidth: 300px;
     width: calc(100% - $legendWidth);
     max-height: 75vh;
     background-color: var(--c-background-light);
-    border: 1px solid var(--c-border-dark);
+    border: 1px solid var(--c-border-light);
     border-radius: $md;
 }
 

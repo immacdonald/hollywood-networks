@@ -1,8 +1,39 @@
+import React, { useMemo, ReactNode } from 'react';
 import NetworkGraph from '../components/NetworkGraph';
 import Latex from 'react-latex-next';
 import style from './Pages.module.scss';
+import topDirectors from '../static/top_directors.json';
 
 function Home() {
+    const directorTable : ReactNode = useMemo(() => {
+        return (
+            <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Director</th>
+                            <th>Label</th>
+                            <th>ARH</th>
+                            <th>Most Homogeneous Roles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {topDirectors.map((director : any) => {
+                            return (
+                                <tr>
+                                    <td>{director.rank}</td>
+                                    <td>{director.name}</td>
+                                    <td>{director.label}</td>
+                                    <td>{director.arh}</td>
+                                    <td>{director.role}</td>
+                                </tr>
+                            )
+                        })}
+                    </tbody>
+                </table>
+        )
+    }, []);
+
     return (
         <div>
             <div className={style.section}>
@@ -54,7 +85,11 @@ function Home() {
                 <p>
                     A director's <strong>Average Role Homogeneity</strong> <Latex>($ARH$) summarizes the director's $RH$ value across (or irrespective) all roles.</Latex>
                 </p>
-                <p><Latex>Here is a ranked list of the Directors sorted by their respective $ARH$ values.</Latex></p>
+            </div>
+            <div className={style.altSection}>
+                <h3>Top Directors by Average Role Homogeneity</h3>
+                <p><Latex>Here is a ranked list of the Directors sorted by their respective $ARH$ values:</Latex></p>
+                {directorTable}
             </div>
         </div>
     );

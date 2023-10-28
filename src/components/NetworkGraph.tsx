@@ -167,18 +167,29 @@ const NetworkGraph: React.FC<unknown> = () => {
                 </SigmaContainer>
             </div>
             <div className={style.legend}>
-                <p>
-                    <strong>Legend</strong>
-                </p>
+                <div>
+                    <strong>Director Legend</strong>
+                </div>
                 <div className={style.legendList}>
                 {legendList.map((legend) => {
-                    return (
+                    return legend.key == "crew" ? false : (
                         <div className={style.legendKey} key={legend.key}>
                             <span style={{ backgroundColor: legend.color }}></span>
                             {legend.label} (<strong>{legend.key}</strong>)
                         </div>
                     );
                 })}
+                <div>
+                    <strong>Crew Legend</strong>
+                </div>
+                <div className={style.legendList}>
+                {legendList.length > 0 && (
+                    <div className={style.legendKey} key={legendList[0].key}>
+                        <span style={{ backgroundColor: legendList[0].color }}></span>
+                        {legendList[0].label} (<strong>{legendList[0].key}</strong>)
+                    </div>
+                )}
+                </div>
                 </div>
             </div>
         </div>
