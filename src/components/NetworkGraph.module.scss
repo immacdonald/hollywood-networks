@@ -1,6 +1,6 @@
 @use '../styles' as *;
 
-$legendWidth: 300px;
+$legendWidth: 350px;
 
 .fullGraph {
     width: 100%;
@@ -47,7 +47,6 @@ $legendWidth: 300px;
         column-width: 50%;
         display: block;
     }
-
 }
 
 .sigmaGraph {
@@ -74,4 +73,10 @@ $legendWidth: 300px;
         width: 16px;
         height: 16px;
     }
+}
+
+.legendSmall {
+    font-size: $smFont;
+    padding-left: 0.25em;
+    margin-bottom: 0.25em;
 }

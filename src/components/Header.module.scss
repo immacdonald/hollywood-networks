@@ -19,13 +19,19 @@
 }
 
 .logo {
-    font-weight: 900;
-    font-style: italic;
-    font-size: $lgFont;
-    white-space: nowrap;
-    user-select: none;
-    color: var(--c-primary);
-    margin-right: $xxl;
+    > a {
+        font-weight: 900;
+        font-style: italic;
+        font-size: $lgFont;
+        white-space: nowrap;
+        user-select: none;
+        color: var(--c-primary);
+        margin-right: $xxl;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 .navigation {

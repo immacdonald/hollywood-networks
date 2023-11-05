@@ -53,6 +53,13 @@ interface LegendKey<T> {
     [Key: string]: T;
 }
 
+interface LegendData {
+    color: string;
+    count: number;
+    label: string;
+    key?: string;
+}
+
 const legendKey: LegendKey<string> = {
     M: 'Male',
     F: 'Female',
@@ -68,21 +75,18 @@ const legendKey: LegendKey<string> = {
 const NetworkGraph: React.FC<unknown> = () => {
     const graphData: GraphData = jsonGraph as unknown as GraphData;
 
-    const graphLegend: Map<string, { color: string; count: number; label: string }> = new Map<
-        string,
-        { color: string; count: number; label: string }
-    >();
+    const graphLegend: Map<string, LegendData> = new Map<string, LegendData>();
 
     // Scale each node to have the size of cust_size attribute within a normalized range
     graphData.nodes.forEach((node, index) => {
-        graphData.nodes[index].attributes.size = Math.max(node.attributes[2] / 50, 1);
+        graphData.nodes[index].attributes.size = Math.max(node.attributes[2] / 100, 1);
         graphData.nodes[index].attributes.label = node.attributes[1] + ' (' + node.attributes[0] + ')';
 
         const identity: string = String(node.attributes[0]);
 
         if (!graphLegend.get(identity)) {
-            let result = 'Crew';
-            if (identity != 'crew') {
+            let result = 'Film Crew';
+            if (identity != 'Crew') {
                 result = '';
                 identity.split('').forEach((letter) => {
                     result += legendKey[letter] + ' ';
@@ -90,7 +94,7 @@ const NetworkGraph: React.FC<unknown> = () => {
             }
             graphLegend.set(identity, { color: node.attributes.color, count: 1, label: result.trim() });
         } else {
-            const existing: { color: string; count: number; label: string } | undefined = graphLegend.get(identity);
+            const existing: LegendData | undefined = graphLegend.get(identity);
             if (existing) {
                 existing.count++;
                 graphLegend.set(identity, existing);
@@ -98,14 +102,25 @@ const NetworkGraph: React.FC<unknown> = () => {
         }
     });
 
-    const legendList: Array<{ key: string; color: string; count: number; label: string }> = [];
+    // Convert the dictionary of LegendData to an array to be mapped
+    const legendList: LegendData[] = [];
 
-    graphLegend.forEach((value: { color: string; count: number; label: string }, key: string) => {
+    graphLegend.forEach((value: LegendData, key: string) => {
         legendList.push({ key, ...value });
     });
 
+    // Sort by count
     legendList.sort((a, b) => b.count - a.count);
-    console.log(legendList);
+
+    // For colored edges
+    /*const opacityHex = "02";
+    graphData.edges.forEach((edge, index) => {
+        graphData.edges[index].attributes.size = edge.attributes.weight * 10;
+        graphData.edges[index].attributes.color = `${graphData.edges[index].attributes.color.substring(0, 7)}80`;
+        if (index == 0) {
+            console.log(graphData.edges[index].attributes.color);
+        }
+    });*/
 
     // Size each edge based on the weight and update the edge color to be translucent
     graphData.edges.forEach((edge, index) => {
@@ -115,7 +130,7 @@ const NetworkGraph: React.FC<unknown> = () => {
 
     const graph = Graph.from(graphData as unknown as AbstractGraph<NodeAttributes, EdgeAttributes, GraphAttributes>);
 
-    const nodeClicked: React.FC = (graphNode: unknown) => {
+    const nodeClicked: React.FC = (graphNode: any) => {
         const imdbURL: string = `https://www.imdb.com/name/${graphNode}/`;
         window.open(imdbURL, '_blank');
         return null;
@@ -125,7 +140,6 @@ const NetworkGraph: React.FC<unknown> = () => {
         const registerEvents = useRegisterEvents();
 
         useEffect(() => {
-            // Register the events
             registerEvents({
                 doubleClickNode: (event) => nodeClicked(event.node)
             });
@@ -171,25 +185,29 @@ const NetworkGraph: React.FC<unknown> = () => {
                     <strong>Director Legend</strong>
                 </div>
                 <div className={style.legendList}>
-                {legendList.map((legend) => {
-                    return legend.key == "crew" ? false : (
-                        <div className={style.legendKey} key={legend.key}>
-                            <span style={{ backgroundColor: legend.color }}></span>
-                            {legend.label} (<strong>{legend.key}</strong>)
-                        </div>
-                    );
-                })}
-                <div>
-                    <strong>Crew Legend</strong>
-                </div>
-                <div className={style.legendList}>
-                {legendList.length > 0 && (
-                    <div className={style.legendKey} key={legendList[0].key}>
-                        <span style={{ backgroundColor: legendList[0].color }}></span>
-                        {legendList[0].label} (<strong>{legendList[0].key}</strong>)
+                    {legendList.map((legend) => {
+                        return legend.key == 'Crew' ? (
+                            false
+                        ) : (
+                            <div className={style.legendKey} key={legend.key}>
+                                <span style={{ backgroundColor: legend.color }}></span>
+                                {legend.label} (<strong>{legend.key}</strong>){' '}
+                                <span className={style.legendSmall}>{legend.count}</span>
+                            </div>
+                        );
+                    })}
+                    <div>
+                        <strong>Crew Legend</strong>
                     </div>
-                )}
-                </div>
+                    <div className={style.legendList}>
+                        {legendList.length > 0 && (
+                            <div className={style.legendKey} key={legendList[0].key}>
+                                <span style={{ backgroundColor: legendList[0].color }}></span>
+                                {legendList[0].label} (<strong>{legendList[0].key}</strong>){' '}
+                                <span className={style.legendSmall}>{legendList[0].count}</span>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

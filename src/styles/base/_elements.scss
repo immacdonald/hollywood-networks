@@ -47,26 +47,24 @@ a {
 
 // Tables
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-	line-height: normal;
-	text-align: left;
-	border: 1px solid var(--c-border-light);
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    line-height: normal;
+    text-align: left;
+    border: 1px solid var(--c-border-light);
     border-radius: $sm;
-
 }
-  
+
 th {
-	padding: $sm;
-	border-bottom: 1px solid var(--c-border-light);
+    padding: $sm;
+    border-bottom: 1px solid var(--c-border-light);
 }
 
 td {
-	padding: $xs;
-
+    padding: $xs;
 }
-  
+
 tr:nth-child(even) {
-	background-color: var(--c-background-light);
+    background-color: var(--c-background-light);
 }
