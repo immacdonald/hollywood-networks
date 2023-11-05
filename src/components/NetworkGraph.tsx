@@ -112,6 +112,7 @@ const NetworkGraph: React.FC<unknown> = () => {
     // Sort by count
     legendList.sort((a, b) => b.count - a.count);
 
+    // For colored edges
     /*const opacityHex = "02";
     graphData.edges.forEach((edge, index) => {
         graphData.edges[index].attributes.size = edge.attributes.weight * 10;
@@ -129,7 +130,7 @@ const NetworkGraph: React.FC<unknown> = () => {
 
     const graph = Graph.from(graphData as unknown as AbstractGraph<NodeAttributes, EdgeAttributes, GraphAttributes>);
 
-    const nodeClicked: React.FC = (graphNode: unknown) => {
+    const nodeClicked: React.FC = (graphNode: any) => {
         const imdbURL: string = `https://www.imdb.com/name/${graphNode}/`;
         window.open(imdbURL, '_blank');
         return null;
@@ -184,25 +185,29 @@ const NetworkGraph: React.FC<unknown> = () => {
                     <strong>Director Legend</strong>
                 </div>
                 <div className={style.legendList}>
-                {legendList.map((legend) => {
-                    return legend.key == "Crew" ? false : (
-                        <div className={style.legendKey} key={legend.key}>
-                            <span style={{ backgroundColor: legend.color }}></span>
-                            {legend.label} (<strong>{legend.key}</strong>) <span className={style.legendSmall}>{legend.count}</span>
-                        </div>
-                    );
-                })}
-                <div>
-                    <strong>Crew Legend</strong>
-                </div>
-                <div className={style.legendList}>
-                {legendList.length > 0 && (
-                    <div className={style.legendKey} key={legendList[0].key}>
-                        <span style={{ backgroundColor: legendList[0].color }}></span>
-                        {legendList[0].label} (<strong>{legendList[0].key}</strong>) <span className={style.legendSmall}>{legendList[0].count}</span>
+                    {legendList.map((legend) => {
+                        return legend.key == 'Crew' ? (
+                            false
+                        ) : (
+                            <div className={style.legendKey} key={legend.key}>
+                                <span style={{ backgroundColor: legend.color }}></span>
+                                {legend.label} (<strong>{legend.key}</strong>){' '}
+                                <span className={style.legendSmall}>{legend.count}</span>
+                            </div>
+                        );
+                    })}
+                    <div>
+                        <strong>Crew Legend</strong>
                     </div>
-                )}
-                </div>
+                    <div className={style.legendList}>
+                        {legendList.length > 0 && (
+                            <div className={style.legendKey} key={legendList[0].key}>
+                                <span style={{ backgroundColor: legendList[0].color }}></span>
+                                {legendList[0].label} (<strong>{legendList[0].key}</strong>){' '}
+                                <span className={style.legendSmall}>{legendList[0].count}</span>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

@@ -22,7 +22,7 @@ export const GraphDefault: React.FC<GraphDefaultProps> = ({ graph }) => {
             clickNode: (event) => setHoveredNode(event.node),
             clickStage: () => setHoveredNode(null)
         });
-    }, [loadGraph, registerEvents]);
+    }, [loadGraph, registerEvents]); /* eslint-disable-line react-hooks/exhaustive-deps */
 
     useEffect(() => {
         setSettings({
