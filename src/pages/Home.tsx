@@ -22,7 +22,7 @@ function Home() {
                             return (
                                 <tr>
                                     <td>{director.rank}</td>
-                                    <td>{director.name}</td>
+                                    <td><a href={`https://www.imdb.com/name/${director.imdb}/`}>{director.name}</a></td>
                                     <td>{director.label}</td>
                                     <td>{director.arh}</td>
                                     <td>{director.role}</td>
