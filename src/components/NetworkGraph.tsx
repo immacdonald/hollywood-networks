@@ -53,6 +53,13 @@ interface LegendKey<T> {
     [Key: string]: T;
 }
 
+interface LegendData {
+    color: string;
+    count: number;
+    label: string;
+    key?: string;
+}
+
 const legendKey: LegendKey<string> = {
     M: 'Male',
     F: 'Female',
@@ -68,10 +75,7 @@ const legendKey: LegendKey<string> = {
 const NetworkGraph: React.FC<unknown> = () => {
     const graphData: GraphData = jsonGraph as unknown as GraphData;
 
-    const graphLegend: Map<string, { color: string; count: number; label: string }> = new Map<
-        string,
-        { color: string; count: number; label: string }
-    >();
+    const graphLegend: Map<string, LegendData> = new Map<string, LegendData>();
 
     // Scale each node to have the size of cust_size attribute within a normalized range
     graphData.nodes.forEach((node, index) => {
@@ -90,7 +94,7 @@ const NetworkGraph: React.FC<unknown> = () => {
             }
             graphLegend.set(identity, { color: node.attributes.color, count: 1, label: result.trim() });
         } else {
-            const existing: { color: string; count: number; label: string } | undefined = graphLegend.get(identity);
+            const existing: LegendData | undefined = graphLegend.get(identity);
             if (existing) {
                 existing.count++;
                 graphLegend.set(identity, existing);
@@ -98,12 +102,14 @@ const NetworkGraph: React.FC<unknown> = () => {
         }
     });
 
-    const legendList: Array<{ key: string; color: string; count: number; label: string }> = [];
+    // Convert the dictionary of LegendData to an array to be mapped
+    const legendList: LegendData[] = [];
 
-    graphLegend.forEach((value: { color: string; count: number; label: string }, key: string) => {
+    graphLegend.forEach((value: LegendData, key: string) => {
         legendList.push({ key, ...value });
     });
 
+    // Sort by count
     legendList.sort((a, b) => b.count - a.count);
 
     // Size each edge based on the weight and update the edge color to be translucent
@@ -173,7 +179,7 @@ const NetworkGraph: React.FC<unknown> = () => {
                     return legend.key == "crew" ? false : (
                         <div className={style.legendKey} key={legend.key}>
                             <span style={{ backgroundColor: legend.color }}></span>
-                            {legend.label} (<strong>{legend.key}</strong>)
+                            {legend.label} (<strong>{legend.key}</strong>) <span className={style.legendSmall}>{legend.count}</span>
                         </div>
                     );
                 })}
@@ -184,7 +190,7 @@ const NetworkGraph: React.FC<unknown> = () => {
                 {legendList.length > 0 && (
                     <div className={style.legendKey} key={legendList[0].key}>
                         <span style={{ backgroundColor: legendList[0].color }}></span>
-                        {legendList[0].label} (<strong>{legendList[0].key}</strong>)
+                        {legendList[0].label} (<strong>{legendList[0].key}</strong>) <span className={style.legendSmall}>{legendList[0].count}</span>
                     </div>
                 )}
                 </div>
