@@ -115,8 +115,9 @@ function Home() {
                         {'It is undefined if the denominator, $\\text{Total number of role opportunities} = 0$. '}
                     </Latex>
                     <Latex>
-                        $RH$ ranges between $0$ and $1$, where $0$ means the director employed different people for all
-                        slots of the role opportunities.
+                        {
+                            '$RH$ ranges between $0$ and $1$, where $0$ means the director employed different people for all slots of the role opportunities. '
+                        }
                     </Latex>
                     <Latex>
                         An $RH$ value of $1$ means that the director employed the same person exclusively for all slots
