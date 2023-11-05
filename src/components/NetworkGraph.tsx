@@ -79,14 +79,14 @@ const NetworkGraph: React.FC<unknown> = () => {
 
     // Scale each node to have the size of cust_size attribute within a normalized range
     graphData.nodes.forEach((node, index) => {
-        graphData.nodes[index].attributes.size = Math.max(node.attributes[2] / 50, 1);
+        graphData.nodes[index].attributes.size = Math.max(node.attributes[2] / 100, 1);
         graphData.nodes[index].attributes.label = node.attributes[1] + ' (' + node.attributes[0] + ')';
 
         const identity: string = String(node.attributes[0]);
 
         if (!graphLegend.get(identity)) {
-            let result = 'Crew';
-            if (identity != 'crew') {
+            let result = 'Film Crew';
+            if (identity != 'Crew') {
                 result = '';
                 identity.split('').forEach((letter) => {
                     result += legendKey[letter] + ' ';
@@ -111,6 +111,15 @@ const NetworkGraph: React.FC<unknown> = () => {
 
     // Sort by count
     legendList.sort((a, b) => b.count - a.count);
+
+    /*const opacityHex = "02";
+    graphData.edges.forEach((edge, index) => {
+        graphData.edges[index].attributes.size = edge.attributes.weight * 10;
+        graphData.edges[index].attributes.color = `${graphData.edges[index].attributes.color.substring(0, 7)}80`;
+        if (index == 0) {
+            console.log(graphData.edges[index].attributes.color);
+        }
+    });*/
 
     // Size each edge based on the weight and update the edge color to be translucent
     graphData.edges.forEach((edge, index) => {
@@ -176,7 +185,7 @@ const NetworkGraph: React.FC<unknown> = () => {
                 </div>
                 <div className={style.legendList}>
                 {legendList.map((legend) => {
-                    return legend.key == "crew" ? false : (
+                    return legend.key == "Crew" ? false : (
                         <div className={style.legendKey} key={legend.key}>
                             <span style={{ backgroundColor: legend.color }}></span>
                             {legend.label} (<strong>{legend.key}</strong>) <span className={style.legendSmall}>{legend.count}</span>
