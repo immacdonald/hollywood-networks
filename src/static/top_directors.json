@@ -1,709 +1,810 @@
 [
-  {
-    "rank": 1,
-    "label": "MB",
-    "arh": 0.594,
-    "name": "Tyler Perry",
-    "role": "Production Design by & Film Editing by & Cinematography by"
-  },
-  {
-    "rank": 2,
-    "label": "MWH",
-    "arh": 0.549,
-    "name": "Peter Jackson",
-    "role": "Writing Credits & Film Editing by & Production Design by"
-  },
-  {
-    "rank": 3,
-    "label": "MW",
-    "arh": 0.534,
-    "name": "Clint Eastwood",
-    "role": "Film Editing by & Cinematography by & Costume Design by"
-  },
-  {
-    "rank": 4,
-    "label": "MWH",
-    "arh": 0.503,
-    "name": "David Yates",
-    "role": "Film Editing by & Music by & Production Design by"
-  },
-  {
-    "rank": 5,
-    "label": "MWH",
-    "arh": 0.497,
-    "name": "Christopher Nolan",
-    "role": "Cinematography by & Production Design by & Film Editing by"
-  },
-  {
-    "rank": 6,
-    "label": "MW",
-    "arh": 0.463,
-    "name": "Steven Soderberg",
-    "role": "Music by & Production Design by & Costume Design by"
-  },
-  {
-    "rank": 7,
-    "label": "MB",
-    "arh": 0.461,
-    "name": "Barry Jenkins",
-    "role": "Music by & Cinematography by & Costume Design by"
-  },
-  {
-    "rank": 8,
-    "label": "MWH",
-    "arh": 0.453,
-    "name": "Steven Spielberg",
-    "role": "Music by & Film Editing by & Cinematography by"
-  },
-  {
-    "rank": 9,
-    "label": "MW",
-    "arh": 0.446,
-    "name": "Wes Anderson",
-    "role": "Cinematography by & Music by & Costume Design by"
-  },
-  {
-    "rank": 10,
-    "label": "MW",
-    "arh": 0.444,
-    "name": "Woody Allen",
-    "role": "Film Editing by & Production Design by & Sound Department"
-  },
-  {
-    "rank": 11,
-    "label": "FWQ",
-    "arh": 0.425,
-    "name": "Lilly Wachowski",
-    "role": "Writing Credits & Music by & Film Editing by"
-  },
-  {
-    "rank": 12,
-    "label": "MW",
-    "arh": 0.421,
-    "name": "Rian Johnson",
-    "role": "Writing Credits & Cinematography by & Music by"
-  },
-  {
-    "rank": 13,
-    "label": "MWH",
-    "arh": 0.419,
-    "name": "J.J. Abrams",
-    "role": "Film Editing by & Music by & Cinematography by"
-  },
-  {
-    "rank": 14,
-    "label": "MB",
-    "arh": 0.417,
-    "name": "Ryan Coogler",
-    "role": "Production Design by & Music by & Writing Credits"
-  },
-  {
-    "rank": 15,
-    "label": "MWH",
-    "arh": 0.408,
-    "name": "Michael Bay",
-    "role": "Music by & Film Editing by & Costume Design by"
-  },
-  {
-    "rank": 16,
-    "label": "MWH",
-    "arh": 0.407,
-    "name": "Bryan Singer",
-    "role": "Cinematography by & Music by & Film Editing by"
-  },
-  {
-    "rank": 17,
-    "label": "FW",
-    "arh": 0.404,
-    "name": "Kelly Reichardt",
-    "role": "Film Editing by & Writing Credits & Cinematography by"
-  },
-  {
-    "rank": 18,
-    "label": "MWH",
-    "arh": 0.404,
-    "name": "Gore Verbinski",
-    "role": "Cinematography by & Writing Credits & Film Editing by"
-  },
-  {
-    "rank": 19,
-    "label": "MWH",
-    "arh": 0.403,
-    "name": "Robert Zemeckis",
-    "role": "Music by & Costume Design by & Film Editing by"
-  },
-  {
-    "rank": 20,
-    "label": "MW",
-    "arh": 0.399,
-    "name": "Quentin Tarantino",
-    "role": "Film Editing by & Cinematography by & Production Design by"
-  },
-  {
-    "rank": 21,
-    "label": "MWH",
-    "arh": 0.386,
-    "name": "Tim Burton",
-    "role": "Music by & Costume Design by & Film Editing by"
-  },
-  {
-    "rank": 22,
-    "label": "FW",
-    "arh": 0.384,
-    "name": "Lynn Shelton",
-    "role": "Special Effects by & Cinematography by & Production Design by"
-  },
-  {
-    "rank": 23,
-    "label": "MW",
-    "arh": 0.379,
-    "name": "Richard Linklater",
-    "role": "Film Editing by & Cinematography by & Production Design by"
-  },
-  {
-    "rank": 24,
-    "label": "MW",
-    "arh": 0.373,
-    "name": "Paul Thomas Anderson",
-    "role": "Costume Design by & Music by & Cinematography by"
-  },
-  {
-    "rank": 25,
-    "label": "FWQ",
-    "arh": 0.373,
-    "name": "Lana Wachowski",
-    "role": "Writing Credits & Music by & Film Editing by"
-  },
-  {
-    "rank": 26,
-    "label": "MWH",
-    "arh": 0.369,
-    "name": "Anthony Russo",
-    "role": "Writing Credits & Music by & Costume Design by"
-  },
-  {
-    "rank": 27,
-    "label": "MW",
-    "arh": 0.365,
-    "name": "Joel Coen",
-    "role": "Costume Design by & Music by & Sound Department"
-  },
-  {
-    "rank": 28,
-    "label": "MW",
-    "arh": 0.356,
-    "name": "Adam McKay",
-    "role": "Production Design by & Film Editing by & Music by"
-  },
-  {
-    "rank": 29,
-    "label": "MB",
-    "arh": 0.352,
-    "name": "Spike Lee",
-    "role": "Costume Design by & Music by & Film Editing by"
-  },
-  {
-    "rank": 30,
-    "label": "MA",
-    "arh": 0.351,
-    "name": "Justin Lin",
-    "role": "Costume Design by & Music by & Film Editing by"
-  },
-  {
-    "rank": 31,
-    "label": "MWH",
-    "arh": 0.351,
-    "name": "Ron Howard",
-    "role": "Film Editing by & Music by & Production Design by"
-  },
-  {
-    "rank": 32,
-    "label": "FW",
-    "arh": 0.343,
-    "name": "Nicole Holofcener",
-    "role": "Writing Credits & Special Effects by & Film Editing by"
-  },
-  {
-    "rank": 33,
-    "label": "FW",
-    "arh": 0.340,
-    "name": "Sophia Coppola",
-    "role": "Film Editing by & Production Design by & Cinematography by"
-  },
-  {
-    "rank": 34,
-    "label": "MWH",
-    "arh": 0.337,
-    "name": "Roland Emmerich",
-    "role": "Music by & Cinematography by & Production Design by"
-  },
-  {
-    "rank": 35,
-    "label": "FW",
-    "arh": 0.333,
-    "name": "Greta Gerwig",
-    "role": "Music by & Production Design by & Costume Design by"
-  },
-  {
-    "rank": 36,
-    "label": "MW",
-    "arh": 0.329,
-    "name": "Darren Aronofsky",
-    "role": "Cinematography by & Music by & Film Editing by"
-  },
-  {
-    "rank": 37,
-    "label": "MAH",
-    "arh": 0.322,
-    "name": "James Wan",
-    "role": "Music by & Production Design by & Film Editing by"
-  },
-  {
-    "rank": 38,
-    "label": "MW",
-    "arh": 0.320,
-    "name": "Alexander Payne",
-    "role": "Film Editing by & Cinematography by & Costume Design by"
-  },
-  {
-    "rank": 39,
-    "label": "MWH",
-    "arh": 0.311,
-    "name": "Ridley Scott",
-    "role": "Production Design by & Costume Design by & Film Editing by"
-  },
-  {
-    "rank": 40,
-    "label": "MWH",
-    "arh": 0.308,
-    "name": "Sam Raimi",
-    "role": "Music by & Film Editing by & Writing Credits"
-  },
-  {
-    "rank": 41,
-    "label": "MWH",
-    "arh": 0.304,
-    "name": "Jon Favreau",
-    "role": "Costume Design by & Film Editing by & Music by"
-  },
-  {
-    "rank": 42,
-    "label": "MW",
-    "arh": 0.296,
-    "name": "Oliver Stone",
-    "role": "Film Editing by & Cinematography by & Production Design by"
-  },
-  {
-    "rank": 43,
-    "label": "MW",
-    "arh": 0.289,
-    "name": "James Gray",
-    "role": "Production Design by & Film Editing by & Cinematography by"
-  },
-  {
-    "rank": 44,
-    "label": "MW",
-    "arh": 0.284,
-    "name": "Francis Ford Coppola",
-    "role": "Production Design by & Film Editing by & Music by"
-  },
-  {
-    "rank": 45,
-    "label": "MW",
-    "arh": 0.282,
-    "name": "David Cronenberg",
-    "role": "Costume Design by & Music by & Production Design by"
-  },
-  {
-    "rank": 46,
-    "label": "MW",
-    "arh": 0.280,
-    "name": "Spike Jonze",
-    "role": "Costume Design by & Production Design by & Film Editing by"
-  },
-  {
-    "rank": 47,
-    "label": "MW",
-    "arh": 0.278,
-    "name": "Martin Scorsese",
-    "role": "Film Editing by & Production Design by & Costume Design by"
-  },
-  {
-    "rank": 48,
-    "label": "MAQ",
-    "arh": 0.258,
-    "name": "Gregg Araki",
-    "role": "Writing Credits & Cinematography by & Production Design by"
-  },
-  {
-    "rank": 49,
-    "label": "FW",
-    "arh": 0.256,
-    "name": "Julie Taymor",
-    "role": "Music by & Cinematography by & Film Editing by"
-  },
-  {
-    "rank": 50,
-    "label": "FW",
-    "arh": 0.251,
-    "name": "Andrea Arnold",
-    "role": "Music by & Cinematography by & Film Editing by"
-  },
-  {
-    "rank": 51,
-    "label": "MA",
-    "arh": 0.243,
-    "name": "Ang Lee",
-    "role": "Film Editing by & Sound Department & Writing Credits"
-  },
-  {
-    "rank": 52,
-    "label": "ML",
-    "arh": 0.238,
-    "name": "Guillermo del Toro",
-    "role": "Cinematography by & Music by & Film Editing by"
-  },
-  {
-    "rank": 53,
-    "label": "FW",
-    "arh": 0.237,
-    "name": "Anne Fletcher",
-    "role": "Cinematography by & Production Design by & Music by"
-  },
-  {
-    "rank": 54,
-    "label": "MW",
-    "arh": 0.236,
-    "name": "Cameron Crowe",
-    "role": "Costume Design by & Production Design by & Film Editing by"
-  },
-  {
-    "rank": 55,
-    "label": "MI",
-    "arh": 0.235,
-    "name": "Taika Waititi",
-    "role": "Costume Design by & Music by & Film Editing by"
-  },
-  {
-    "rank": 56,
-    "label": "FW",
-    "arh": 0.222,
-    "name": "Amy Heckerling",
-    "role": "Film Editing by & Music by & Costume Design by"
-  },
-  {
-    "rank": 57,
-    "label": "MB",
-    "arh": 0.222,
-    "name": "Antoine Fuqua",
-    "role": "Production Design by & Cinematography by & Music by"
-  },
-  {
-    "rank": 58,
-    "label": "MWH",
-    "arh": 0.222,
-    "name": "Chris Columbus",
-    "role": "Music by & Film Editing by & Production Design by"
-  },
-  {
-    "rank": 59,
-    "label": "MB",
-    "arh": 0.221,
-    "name": "Jordan Peele",
-    "role": "Music by & Film Editing by & Production Design by"
-  },
-  {
-    "rank": 60,
-    "label": "ML",
-    "arh": 0.220,
-    "name": "Pablo Larraín",
-    "role": "Production Design by & Music by & Costume Design by"
-  },
-  {
-    "rank": 61,
-    "label": "MW",
-    "arh": 0.220,
-    "name": "Terrence Malick",
-    "role": "Production Design by & Film Editing by & Sound Department"
-  },
-  {
-    "rank": 62,
-    "label": "MW",
-    "arh": 0.216,
-    "name": "Noah Baumbach",
-    "role": "Film Editing by & Cinematography by & Music by"
-  },
-  {
-    "rank": 63,
-    "label": "MWH",
-    "arh": 0.215,
-    "name": "James Cameron",
-    "role": "Music by & Film Editing by & Cinematography by"
-  },
-  {
-    "rank": 64,
-    "label": "FW",
-    "arh": 0.209,
-    "name": "Nancy Meyers",
-    "role": "Production Design by & Music by & Film Editing by"
-  },
-  {
-    "rank": 65,
-    "label": "MWQ",
-    "arh": 0.208,
-    "name": "Todd Haynes",
-    "role": "Costume Design by & Cinematography by & Film Editing by"
-  },
-  {
-    "rank": 66,
-    "label": "MW",
-    "arh": 0.208,
-    "name": "Mike Mills",
-    "role": "Writing Credits & Costume Design by & Cinematography by"
-  },
-  {
-    "rank": 67,
-    "label": "MW",
-    "arh": 0.205,
-    "name": "David   Fincher",
-    "role": "Music by & Sound Department & Film Editing by"
-  },
-  {
-    "rank": 68,
-    "label": "MI",
-    "arh": 0.205,
-    "name": "Sterlin Harjo",
-    "role": "Music by & Cinematography by & Film Editing by"
-  },
-  {
-    "rank": 69,
-    "label": "MW",
-    "arh": 0.202,
-    "name": "Brian De Palma",
-    "role": "Film Editing by & Music by & Cinematography by"
-  },
-  {
-    "rank": 70,
-    "label": "FW",
-    "arh": 0.200,
-    "name": "Sarah Polley",
-    "role": "Cinematography by & Music by & Film Editing by"
-  },
-  {
-    "rank": 71,
-    "label": "MA",
-    "arh": 0.200,
-    "name": "M. Night Shyamalan",
-    "role": "Music by & Costume Design by & Film Editing by"
-  },
-  {
-    "rank": 72,
-    "label": "FW",
-    "arh": 0.200,
-    "name": "Niki Caro",
-    "role": "Film Editing by & Production Design by & Music by"
-  },
-  {
-    "rank": 73,
-    "label": "FB",
-    "arh": 0.199,
-    "name": "Kasi Lemmons",
-    "role": "Film Editing by & Music by & Production Design by"
-  },
-  {
-    "rank": 74,
-    "label": "FW",
-    "arh": 0.197,
-    "name": "Marielle Heller",
-    "role": "Music by & Cinematography by & Film Editing by"
-  },
-  {
-    "rank": 75,
-    "label": "MW",
-    "arh": 0.191,
-    "name": "Denis Villeneuve",
-    "role": "Cinematography by & Costume Design by & Film Editing by"
-  },
-  {
-    "rank": 76,
-    "label": "MW",
-    "arh": 0.190,
-    "name": "Jim Jarmusch",
-    "role": "Film Editing by & Music by & Cinematography by"
-  },
-  {
-    "rank": 77,
-    "label": "MA",
-    "arh": 0.182,
-    "name": "Jon M. Chu",
-    "role": "Production Design by & Cinematography by & Film Editing by"
-  },
-  {
-    "rank": 78,
-    "label": "MWQ",
-    "arh": 0.180,
-    "name": "Gus Van Sant",
-    "role": "Costume Design by & Sound Department & Music by"
-  },
-  {
-    "rank": 79,
-    "label": "MW",
-    "arh": 0.179,
-    "name": "David O. Russell",
-    "role": "Film Editing by & Production Design by & Costume Design by"
-  },
-  {
-    "rank": 80,
-    "label": "FB",
-    "arh": 0.174,
-    "name": "Gina Prince-Blythwood",
-    "role": "Film Editing by & Costume Design by & Cinematography by"
-  },
-  {
-    "rank": 81,
-    "label": "ML",
-    "arh": 0.173,
-    "name": "Miguel Arteta",
-    "role": "Film Editing by & Music by & Costume Design by"
-  },
-  {
-    "rank": 82,
-    "label": "MW",
-    "arh": 0.170,
-    "name": "David Lynch",
-    "role": "Music by & Costume Design by & Production Design by"
-  },
-  {
-    "rank": 83,
-    "label": "MW",
-    "arh": 0.169,
-    "name": "Michael Mann",
-    "role": "Film Editing by & Cinematography by & Sound Department"
-  },
-  {
-    "rank": 84,
-    "label": "MA",
-    "arh": 0.167,
-    "name": "Wayne Wang",
-    "role": "Film Editing by & Cinematography by & Sound Department"
-  },
-  {
-    "rank": 85,
-    "label": "FBQ",
-    "arh": 0.163,
-    "name": "Dee Rees",
-    "role": "Film Editing by & Music by & Production Design by"
-  },
-  {
-    "rank": 86,
-    "label": "MB",
-    "arh": 0.162,
-    "name": "Charles Burnett",
-    "role": "Music by & Film Editing by & Production Design by"
-  },
-  {
-    "rank": 87,
-    "label": "FW",
-    "arh": 0.161,
-    "name": "Catherine Hardwicke",
-    "role": "Cinematography by & Costume Design by & Film Editing by"
-  },
-  {
-    "rank": 88,
-    "label": "ML",
-    "arh": 0.161,
-    "name": "Jeff Nichols",
-    "role": "Writing Credits & Costume Design by & Film Editing by"
-  },
-  {
-    "rank": 89,
-    "label": "MW",
-    "arh": 0.159,
-    "name": "Terry Gilliam",
-    "role": "Music by & Cinematography by & Production Design by"
-  },
-  {
-    "rank": 90,
-    "label": "FW",
-    "arh": 0.159,
-    "name": "John Hughes",
-    "role": "Cinematography by & Costume Design by & Music by"
-  },
-  {
-    "rank": 91,
-    "label": "MW",
-    "arh": 0.156,
-    "name": "Jim Sheridan",
-    "role": "Film Editing by & Costume Design by & Music by"
-  },
-  {
-    "rank": 92,
-    "label": "MWQ",
-    "arh": 0.155,
-    "name": "Craig Brewer",
-    "role": "Cinematography by & Music by & Film Editing by"
-  },
-  {
-    "rank": 93,
-    "label": "FW",
-    "arh": 0.154,
-    "name": "Robin Swicord",
-    "role": "Writing Credits & Costume Design by & Film Editing by"
-  },
-  {
-    "rank": 94,
-    "label": "MW",
-    "arh": 0.152,
-    "name": "Michael Winterbottom",
-    "role": "Cinematography by & Music by & Film Editing by"
-  },
-  {
-    "rank": 95,
-    "label": "FB",
-    "arh": 0.151,
-    "name": "Andrew Dosunmu",
-    "role": "Cinematography by & Costume Design by & Production Design by"
-  },
-  {
-    "rank": 96,
-    "label": "MB",
-    "arh": 0.150,
-    "name": "Haile Gerima",
-    "role": "Cinematography by & Costume Design by & Film Editing by"
-  },
-  {
-    "rank": 97,
-    "label": "MA",
-    "arh": 0.147,
-    "name": "Steve McQueen",
-    "role": "Cinematography by & Costume Design by & Music by"
-  },
-  {
-    "rank": 98,
-    "label": "FW",
-    "arh": 0.144,
-    "name": "Tina Gordon Chism",
-    "role": "Writing Credits & Cinematography by & Film Editing by"
-  },
-  {
-    "rank": 99,
-    "label": "MW",
-    "arh": 0.143,
-    "name": "Andrew Niccol",
-    "role": "Cinematography by & Costume Design by & Music by"
-  },
-  {
-    "rank": 100,
-    "label": "MW",
-    "arh": 0.142,
-    "name": "Cary Fukunaga",
-    "role": "Cinematography by & Music by & Film Editing by"
-  },
-  {
-    "rank": 101,
-    "label": "MW",
-    "arh": 0.142,
-    "name": "Peter Weir",
-    "role": "Cinematography by & Costume Design by & Music by"
-  }
+    {
+        "rank": 1,
+        "label": "MB",
+        "arh": 0.594,
+        "name": "Tyler Perry",
+        "role": "Production Design by & Film Editing by & Cinematography by",
+        "imdb": "nm0122344"
+    },
+    {
+        "rank": 2,
+        "label": "MWH",
+        "arh": 0.549,
+        "name": "Peter Jackson",
+        "role": "Writing Credits & Film Editing by & Production Design by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 3,
+        "label": "MW",
+        "arh": 0.534,
+        "name": "Clint Eastwood",
+        "role": "Film Editing by & Cinematography by & Costume Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 4,
+        "label": "MWH",
+        "arh": 0.503,
+        "name": "David Yates",
+        "role": "Film Editing by & Music by & Production Design by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 5,
+        "label": "MWH",
+        "arh": 0.497,
+        "name": "Christopher Nolan",
+        "role": "Cinematography by & Production Design by & Film Editing by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 6,
+        "label": "MW",
+        "arh": 0.463,
+        "name": "Steven Soderberg",
+        "role": "Music by & Production Design by & Costume Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 7,
+        "label": "MB",
+        "arh": 0.461,
+        "name": "Barry Jenkins",
+        "role": "Music by & Cinematography by & Costume Design by",
+        "imdb": "nm0122344"
+    },
+    {
+        "rank": 8,
+        "label": "MWH",
+        "arh": 0.453,
+        "name": "Steven Spielberg",
+        "role": "Music by & Film Editing by & Cinematography by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 9,
+        "label": "MW",
+        "arh": 0.446,
+        "name": "Wes Anderson",
+        "role": "Cinematography by & Music by & Costume Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 10,
+        "label": "MW",
+        "arh": 0.444,
+        "name": "Woody Allen",
+        "role": "Film Editing by & Production Design by & Sound Department",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 11,
+        "label": "FWQ",
+        "arh": 0.425,
+        "name": "Lilly Wachowski",
+        "role": "Writing Credits & Music by & Film Editing by",
+        "imdb": "nm0905152"
+    },
+    {
+        "rank": 12,
+        "label": "MW",
+        "arh": 0.421,
+        "name": "Rian Johnson",
+        "role": "Writing Credits & Cinematography by & Music by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 13,
+        "label": "MWH",
+        "arh": 0.419,
+        "name": "J.J. Abrams",
+        "role": "Film Editing by & Music by & Cinematography by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 14,
+        "label": "MB",
+        "arh": 0.417,
+        "name": "Ryan Coogler",
+        "role": "Production Design by & Music by & Writing Credits",
+        "imdb": "nm0122344"
+    },
+    {
+        "rank": 15,
+        "label": "MWH",
+        "arh": 0.408,
+        "name": "Michael Bay",
+        "role": "Music by & Film Editing by & Costume Design by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 16,
+        "label": "MWH",
+        "arh": 0.407,
+        "name": "Bryan Singer",
+        "role": "Cinematography by & Music by & Film Editing by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 17,
+        "label": "FW",
+        "arh": 0.404,
+        "name": "Kelly Reichardt",
+        "role": "Film Editing by & Writing Credits & Cinematography by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 18,
+        "label": "MWH",
+        "arh": 0.404,
+        "name": "Gore Verbinski",
+        "role": "Cinematography by & Writing Credits & Film Editing by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 19,
+        "label": "MWH",
+        "arh": 0.403,
+        "name": "Robert Zemeckis",
+        "role": "Music by & Costume Design by & Film Editing by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 20,
+        "label": "MW",
+        "arh": 0.399,
+        "name": "Quentin Tarantino",
+        "role": "Film Editing by & Cinematography by & Production Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 21,
+        "label": "MWH",
+        "arh": 0.386,
+        "name": "Tim Burton",
+        "role": "Music by & Costume Design by & Film Editing by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 22,
+        "label": "FW",
+        "arh": 0.384,
+        "name": "Lynn Shelton",
+        "role": "Special Effects by & Cinematography by & Production Design by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 23,
+        "label": "MW",
+        "arh": 0.379,
+        "name": "Richard Linklater",
+        "role": "Film Editing by & Cinematography by & Production Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 24,
+        "label": "MW",
+        "arh": 0.373,
+        "name": "Paul Thomas Anderson",
+        "role": "Costume Design by & Music by & Cinematography by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 25,
+        "label": "FWQ",
+        "arh": 0.373,
+        "name": "Lana Wachowski",
+        "role": "Writing Credits & Music by & Film Editing by",
+        "imdb": "nm0905152"
+    },
+    {
+        "rank": 26,
+        "label": "MWH",
+        "arh": 0.369,
+        "name": "Anthony Russo",
+        "role": "Writing Credits & Music by & Costume Design by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 27,
+        "label": "MW",
+        "arh": 0.365,
+        "name": "Joel Coen",
+        "role": "Costume Design by & Music by & Sound Department",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 28,
+        "label": "MW",
+        "arh": 0.356,
+        "name": "Adam McKay",
+        "role": "Production Design by & Film Editing by & Music by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 29,
+        "label": "MB",
+        "arh": 0.352,
+        "name": "Spike Lee",
+        "role": "Costume Design by & Music by & Film Editing by",
+        "imdb": "nm0122344"
+    },
+    {
+        "rank": 30,
+        "label": "MA",
+        "arh": 0.351,
+        "name": "Justin Lin",
+        "role": "Costume Design by & Music by & Film Editing by",
+        "imdb": "nm1560977"
+    },
+    {
+        "rank": 31,
+        "label": "MWH",
+        "arh": 0.351,
+        "name": "Ron Howard",
+        "role": "Film Editing by & Music by & Production Design by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 32,
+        "label": "FW",
+        "arh": 0.343,
+        "name": "Nicole Holofcener",
+        "role": "Writing Credits & Special Effects by & Film Editing by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 33,
+        "label": "FW",
+        "arh": 0.34,
+        "name": "Sophia Coppola",
+        "role": "Film Editing by & Production Design by & Cinematography by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 34,
+        "label": "MWH",
+        "arh": 0.337,
+        "name": "Roland Emmerich",
+        "role": "Music by & Cinematography by & Production Design by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 35,
+        "label": "FW",
+        "arh": 0.333,
+        "name": "Greta Gerwig",
+        "role": "Music by & Production Design by & Costume Design by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 36,
+        "label": "MW",
+        "arh": 0.329,
+        "name": "Darren Aronofsky",
+        "role": "Cinematography by & Music by & Film Editing by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 37,
+        "label": "MAH",
+        "arh": 0.322,
+        "name": "James Wan",
+        "role": "Music by & Production Design by & Film Editing by",
+        "imdb": "nm1490123"
+    },
+    {
+        "rank": 38,
+        "label": "MW",
+        "arh": 0.32,
+        "name": "Alexander Payne",
+        "role": "Film Editing by & Cinematography by & Costume Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 39,
+        "label": "MWH",
+        "arh": 0.311,
+        "name": "Ridley Scott",
+        "role": "Production Design by & Costume Design by & Film Editing by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 40,
+        "label": "MWH",
+        "arh": 0.308,
+        "name": "Sam Raimi",
+        "role": "Music by & Film Editing by & Writing Credits",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 41,
+        "label": "MWH",
+        "arh": 0.304,
+        "name": "Jon Favreau",
+        "role": "Costume Design by & Film Editing by & Music by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 42,
+        "label": "MW",
+        "arh": 0.296,
+        "name": "Oliver Stone",
+        "role": "Film Editing by & Cinematography by & Production Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 43,
+        "label": "MW",
+        "arh": 0.289,
+        "name": "James Gray",
+        "role": "Production Design by & Film Editing by & Cinematography by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 44,
+        "label": "MW",
+        "arh": 0.284,
+        "name": "Francis Ford Coppola",
+        "role": "Production Design by & Film Editing by & Music by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 45,
+        "label": "MW",
+        "arh": 0.282,
+        "name": "David Cronenberg",
+        "role": "Costume Design by & Music by & Production Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 46,
+        "label": "MW",
+        "arh": 0.28,
+        "name": "Spike Jonze",
+        "role": "Costume Design by & Production Design by & Film Editing by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 47,
+        "label": "MW",
+        "arh": 0.278,
+        "name": "Martin Scorsese",
+        "role": "Film Editing by & Production Design by & Costume Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 48,
+        "label": "MAQ",
+        "arh": 0.258,
+        "name": "Gregg Araki",
+        "role": "Writing Credits & Cinematography by & Production Design by",
+        "imdb": "nm0000777"
+    },
+    {
+        "rank": 49,
+        "label": "FW",
+        "arh": 0.256,
+        "name": "Julie Taymor",
+        "role": "Music by & Cinematography by & Film Editing by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 50,
+        "label": "FW",
+        "arh": 0.251,
+        "name": "Andrea Arnold",
+        "role": "Music by & Cinematography by & Film Editing by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 51,
+        "label": "MA",
+        "arh": 0.243,
+        "name": "Ang Lee",
+        "role": "Film Editing by & Sound Department & Writing Credits",
+        "imdb": "nm1560977"
+    },
+    {
+        "rank": 52,
+        "label": "ML",
+        "arh": 0.238,
+        "name": "Guillermo del Toro",
+        "role": "Cinematography by & Music by & Film Editing by",
+        "imdb": "nm1883257"
+    },
+    {
+        "rank": 53,
+        "label": "FW",
+        "arh": 0.237,
+        "name": "Anne Fletcher",
+        "role": "Cinematography by & Production Design by & Music by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 54,
+        "label": "MW",
+        "arh": 0.236,
+        "name": "Cameron Crowe",
+        "role": "Costume Design by & Production Design by & Film Editing by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 55,
+        "label": "MI",
+        "arh": 0.235,
+        "name": "Taika Waititi",
+        "role": "Costume Design by & Music by & Film Editing by",
+        "imdb": "nm1802161"
+    },
+    {
+        "rank": 56,
+        "label": "FW",
+        "arh": 0.222,
+        "name": "Amy Heckerling",
+        "role": "Film Editing by & Music by & Costume Design by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 57,
+        "label": "MB",
+        "arh": 0.222,
+        "name": "Antoine Fuqua",
+        "role": "Production Design by & Cinematography by & Music by",
+        "imdb": "nm0122344"
+    },
+    {
+        "rank": 58,
+        "label": "MWH",
+        "arh": 0.222,
+        "name": "Chris Columbus",
+        "role": "Music by & Film Editing by & Production Design by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 59,
+        "label": "MB",
+        "arh": 0.221,
+        "name": "Jordan Peele",
+        "role": "Music by & Film Editing by & Production Design by",
+        "imdb": "nm0122344"
+    },
+    {
+        "rank": 60,
+        "label": "ML",
+        "arh": 0.22,
+        "name": "Pablo Larra\u00edn",
+        "role": "Production Design by & Music by & Costume Design by",
+        "imdb": "nm1883257"
+    },
+    {
+        "rank": 61,
+        "label": "MW",
+        "arh": 0.22,
+        "name": "Terrence Malick",
+        "role": "Production Design by & Film Editing by & Sound Department",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 62,
+        "label": "MW",
+        "arh": 0.216,
+        "name": "Noah Baumbach",
+        "role": "Film Editing by & Cinematography by & Music by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 63,
+        "label": "MWH",
+        "arh": 0.215,
+        "name": "James Cameron",
+        "role": "Music by & Film Editing by & Cinematography by",
+        "imdb": "nm0000318"
+    },
+    {
+        "rank": 64,
+        "label": "FW",
+        "arh": 0.209,
+        "name": "Nancy Meyers",
+        "role": "Production Design by & Music by & Film Editing by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 65,
+        "label": "MWQ",
+        "arh": 0.208,
+        "name": "Todd Haynes",
+        "role": "Costume Design by & Cinematography by & Film Editing by",
+        "imdb": "nm0001331"
+    },
+    {
+        "rank": 66,
+        "label": "MW",
+        "arh": 0.208,
+        "name": "Mike Mills",
+        "role": "Writing Credits & Costume Design by & Cinematography by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 67,
+        "label": "MW",
+        "arh": 0.205,
+        "name": "David   Fincher",
+        "role": "Music by & Sound Department & Film Editing by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 68,
+        "label": "MI",
+        "arh": 0.205,
+        "name": "Sterlin Harjo",
+        "role": "Music by & Cinematography by & Film Editing by",
+        "imdb": "nm1802161"
+    },
+    {
+        "rank": 69,
+        "label": "MW",
+        "arh": 0.202,
+        "name": "Brian De Palma",
+        "role": "Film Editing by & Music by & Cinematography by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 70,
+        "label": "FW",
+        "arh": 0.2,
+        "name": "Sarah Polley",
+        "role": "Cinematography by & Music by & Film Editing by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 71,
+        "label": "MA",
+        "arh": 0.2,
+        "name": "M. Night Shyamalan",
+        "role": "Music by & Costume Design by & Film Editing by",
+        "imdb": "nm1560977"
+    },
+    {
+        "rank": 72,
+        "label": "FW",
+        "arh": 0.2,
+        "name": "Niki Caro",
+        "role": "Film Editing by & Production Design by & Music by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 73,
+        "label": "FB",
+        "arh": 0.199,
+        "name": "Kasi Lemmons",
+        "role": "Film Editing by & Music by & Production Design by",
+        "imdb": "nm0697656"
+    },
+    {
+        "rank": 74,
+        "label": "FW",
+        "arh": 0.197,
+        "name": "Marielle Heller",
+        "role": "Music by & Cinematography by & Film Editing by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 75,
+        "label": "MW",
+        "arh": 0.191,
+        "name": "Denis Villeneuve",
+        "role": "Cinematography by & Costume Design by & Film Editing by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 76,
+        "label": "MW",
+        "arh": 0.19,
+        "name": "Jim Jarmusch",
+        "role": "Film Editing by & Music by & Cinematography by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 77,
+        "label": "MA",
+        "arh": 0.182,
+        "name": "Jon M. Chu",
+        "role": "Production Design by & Cinematography by & Film Editing by",
+        "imdb": "nm1560977"
+    },
+    {
+        "rank": 78,
+        "label": "MWQ",
+        "arh": 0.18,
+        "name": "Gus Van Sant",
+        "role": "Costume Design by & Sound Department & Music by",
+        "imdb": "nm0001331"
+    },
+    {
+        "rank": 79,
+        "label": "MW",
+        "arh": 0.179,
+        "name": "David O. Russell",
+        "role": "Film Editing by & Production Design by & Costume Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 80,
+        "label": "FB",
+        "arh": 0.174,
+        "name": "Gina Prince-Blythwood",
+        "role": "Film Editing by & Costume Design by & Cinematography by",
+        "imdb": "nm0697656"
+    },
+    {
+        "rank": 81,
+        "label": "ML",
+        "arh": 0.173,
+        "name": "Miguel Arteta",
+        "role": "Film Editing by & Music by & Costume Design by",
+        "imdb": "nm1883257"
+    },
+    {
+        "rank": 82,
+        "label": "MW",
+        "arh": 0.17,
+        "name": "David Lynch",
+        "role": "Music by & Costume Design by & Production Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 83,
+        "label": "MW",
+        "arh": 0.169,
+        "name": "Michael Mann",
+        "role": "Film Editing by & Cinematography by & Sound Department",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 84,
+        "label": "MA",
+        "arh": 0.167,
+        "name": "Wayne Wang",
+        "role": "Film Editing by & Cinematography by & Sound Department",
+        "imdb": "nm1560977"
+    },
+    {
+        "rank": 85,
+        "label": "FBQ",
+        "arh": 0.163,
+        "name": "Dee Rees",
+        "role": "Film Editing by & Music by & Production Design by",
+        "imdb": "nm2011696"
+    },
+    {
+        "rank": 86,
+        "label": "MB",
+        "arh": 0.162,
+        "name": "Charles Burnett",
+        "role": "Music by & Film Editing by & Production Design by",
+        "imdb": "nm0122344"
+    },
+    {
+        "rank": 87,
+        "label": "FW",
+        "arh": 0.161,
+        "name": "Catherine Hardwicke",
+        "role": "Cinematography by & Costume Design by & Film Editing by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 88,
+        "label": "ML",
+        "arh": 0.161,
+        "name": "Jeff Nichols",
+        "role": "Writing Credits & Costume Design by & Film Editing by",
+        "imdb": "nm1883257"
+    },
+    {
+        "rank": 89,
+        "label": "MW",
+        "arh": 0.159,
+        "name": "Terry Gilliam",
+        "role": "Music by & Cinematography by & Production Design by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 90,
+        "label": "FW",
+        "arh": 0.159,
+        "name": "John Hughes",
+        "role": "Cinematography by & Costume Design by & Music by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 91,
+        "label": "MW",
+        "arh": 0.156,
+        "name": "Jim Sheridan",
+        "role": "Film Editing by & Costume Design by & Music by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 92,
+        "label": "MWQ",
+        "arh": 0.155,
+        "name": "Craig Brewer",
+        "role": "Cinematography by & Music by & Film Editing by",
+        "imdb": "nm0001331"
+    },
+    {
+        "rank": 93,
+        "label": "FW",
+        "arh": 0.154,
+        "name": "Robin Swicord",
+        "role": "Writing Credits & Costume Design by & Film Editing by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 94,
+        "label": "MW",
+        "arh": 0.152,
+        "name": "Michael Winterbottom",
+        "role": "Cinematography by & Music by & Film Editing by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 95,
+        "label": "FB",
+        "arh": 0.151,
+        "name": "Andrew Dosunmu",
+        "role": "Cinematography by & Costume Design by & Production Design by",
+        "imdb": "nm0697656"
+    },
+    {
+        "rank": 96,
+        "label": "MB",
+        "arh": 0.15,
+        "name": "Haile Gerima",
+        "role": "Cinematography by & Costume Design by & Film Editing by",
+        "imdb": "nm0122344"
+    },
+    {
+        "rank": 97,
+        "label": "MA",
+        "arh": 0.147,
+        "name": "Steve McQueen",
+        "role": "Cinematography by & Costume Design by & Music by",
+        "imdb": "nm1560977"
+    },
+    {
+        "rank": 98,
+        "label": "FW",
+        "arh": 0.144,
+        "name": "Tina Gordon Chism",
+        "role": "Writing Credits & Cinematography by & Film Editing by",
+        "imdb": "nm1119645"
+    },
+    {
+        "rank": 99,
+        "label": "MW",
+        "arh": 0.143,
+        "name": "Andrew Niccol",
+        "role": "Cinematography by & Costume Design by & Music by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 100,
+        "label": "MW",
+        "arh": 0.142,
+        "name": "Cary Fukunaga",
+        "role": "Cinematography by & Music by & Film Editing by",
+        "imdb": "nm0000876"
+    },
+    {
+        "rank": 101,
+        "label": "MW",
+        "arh": 0.142,
+        "name": "Peter Weir",
+        "role": "Cinematography by & Costume Design by & Music by",
+        "imdb": "nm0000876"
+    }
 ]
