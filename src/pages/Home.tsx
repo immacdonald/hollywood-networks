@@ -20,7 +20,7 @@ function Home() {
                     <tbody>
                         {topDirectors.map((director : any) => {
                             return (
-                                <tr>
+                                <tr key={director.rank}>
                                     <td>{director.rank}</td>
                                     <td><a href={`https://www.imdb.com/name/${director.imdb}/`}>{director.name}</a></td>
                                     <td>{director.label}</td>
@@ -72,13 +72,13 @@ function Home() {
                 </p>
                 <p>
                     Let us consider some simple examples:
-                    <ol style={{marginLeft: "24px"}}>
-                        <li><Latex>If out of $10$ Film Editor role opportunities, Director Jane employed $10$ unique Film Editors, Director Jane's Film Editor role homogeneity $RH = 1 - (10/10) = 0$</Latex></li>
-                        <li><Latex>If out of $10$ Film Editor role opportunities, Director Obi employed $8$ unique Film Editors, Director Obi's Film Editor role homogeneity $RH = 1 - (8/10) = 0.2$</Latex></li>
-                        <li><Latex>If out of $10$ Film Editor role opportunities, Director Kim employed $5$ unique Film Editors, Director Kim's Film Editor role homogeneity $RH = 1 - (5/10) = 0.5$</Latex></li>
-                        <li><Latex>If out of $10$ Film Editor role opportunities, Director John employed $1$ unique Film Editors, Director John's Film Editor role homogeneity $RH = 1$</Latex></li>
-                    </ol>
                 </p>
+                <ol style={{marginLeft: "24px"}}>
+                    <li><Latex>If out of $10$ Film Editor role opportunities, Director Jane employed $10$ unique Film Editors, Director Jane's Film Editor role homogeneity $RH = 1 - (10/10) = 0$</Latex></li>
+                    <li><Latex>If out of $10$ Film Editor role opportunities, Director Obi employed $8$ unique Film Editors, Director Obi's Film Editor role homogeneity $RH = 1 - (8/10) = 0.2$</Latex></li>
+                    <li><Latex>If out of $10$ Film Editor role opportunities, Director Kim employed $5$ unique Film Editors, Director Kim's Film Editor role homogeneity $RH = 1 - (5/10) = 0.5$</Latex></li>
+                    <li><Latex>If out of $10$ Film Editor role opportunities, Director John employed $1$ unique Film Editors, Director John's Film Editor role homogeneity $RH = 1$</Latex></li>
+                </ol>
                 <p>
                     <Latex>As the example illustrates, the fewer the number of unique individuals a director employs for a given role, the larger the director's $RH$ value. In other words, directors that repeatedly employ the same individuals for a given role, will have larger $RH$ values for that role.</Latex>
                 </p>

@@ -105,7 +105,6 @@ const NetworkGraph: React.FC<unknown> = () => {
     });
 
     legendList.sort((a, b) => b.count - a.count);
-    console.log(legendList);
 
     // Size each edge based on the weight and update the edge color to be translucent
     graphData.edges.forEach((edge, index) => {
@@ -125,7 +124,6 @@ const NetworkGraph: React.FC<unknown> = () => {
         const registerEvents = useRegisterEvents();
 
         useEffect(() => {
-            // Register the events
             registerEvents({
                 doubleClickNode: (event) => nodeClicked(event.node)
             });
