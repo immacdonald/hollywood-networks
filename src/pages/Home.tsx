@@ -40,7 +40,7 @@ function Home() {
                 <h1>Hollywood Director-Crew Networks</h1>
                 <h3 style={{marginTop: "0px", fontWeight: 500}}>An exploration of the collaboration network of Hollywood directors.</h3>
                 <p>
-                    The orange nodes represent crew members and rest represent Hollywood directors. Edges connect individuals who have worked on at least a single movie. The network consists of <em>25,023</em> nodes and <em>55,910</em> edges. The sizes of the director nodes correspond to their respective <strong>Average Role Homogeneity</strong> (<Latex>$ARH$</Latex>) values, shown below.
+                    The orange nodes represent crew members and rest represent Hollywood directors. Edges connect individuals who have worked on at least a single movie. The network consists of <strong><em>25,023</em> nodes</strong> and <strong><em>55,910</em> edges</strong>. The sizes of the director nodes correspond to their respective <strong>Average Role Homogeneity</strong> (<Latex>$ARH$</Latex>) values, shown below.
                 </p>
             </div>
             <div className={style.altSection}>
