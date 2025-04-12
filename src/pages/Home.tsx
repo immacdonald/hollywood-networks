@@ -3,6 +3,7 @@ import NetworkGraph from '../components/NetworkGraph';
 import Latex from 'react-latex-next';
 import style from './Pages.module.scss';
 import topDirectors from '../static/top_directors.json';
+import SigmaErrorBoundary from '../components/SigmaErrorBoundary';
 
 function Home() {
     const directorTable: ReactNode = useMemo(() => {
@@ -68,7 +69,9 @@ function Home() {
             </div>
             <div className={style.altSection}>
                 <h2>Graph Visualization</h2>
-                <NetworkGraph />
+                <SigmaErrorBoundary>
+                    <NetworkGraph />
+                </SigmaErrorBoundary>
                 <p>
                     Some renowned film directors are known to work persistently with the same key collaborators. For
                     example, <a href="https://en.wikipedia.org/wiki/Wes_Anderson">Wes Anderson</a> employed the same
