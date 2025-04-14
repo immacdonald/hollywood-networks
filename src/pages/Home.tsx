@@ -3,7 +3,7 @@ import NetworkGraph from '../components/NetworkGraph';
 import Latex from 'react-latex-next';
 import style from './Pages.module.scss';
 import topDirectors from '../static/top_directors.json';
-import SigmaErrorBoundary from '../components/SigmaErrorBoundary';
+import { SigmaErrorBoundary } from '../components/SigmaErrorBoundary';
 
 function Home() {
     const directorTable: ReactNode = useMemo(() => {

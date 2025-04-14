@@ -23,6 +23,6 @@ function devConfig() {
 function prodConfig() {
     return {
         ...baseConfig,
-        base: '/hollywood-networks'
+        base: '/director-crew-network'
     };
 }

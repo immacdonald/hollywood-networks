@@ -1,4 +1,4 @@
-import { Component, ErrorInfo, ReactNode } from "react";
+import { Component, ErrorInfo, ReactNode } from 'react';
 
 interface Props {
     children: ReactNode;
@@ -9,15 +9,15 @@ interface State {
     hasError: boolean;
 }
 
-class SigmaErrorBoundary extends Component<Props, State> {
+class SigmaErrorBoundaryClass extends Component<Props, State> {
     state: State = { hasError: false };
 
-    static getDerivedStateFromError(_: Error): State {
+    static getDerivedStateFromError(): State {
         return { hasError: true };
     }
 
     componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-        console.error("Sigma rendering error:", error, errorInfo);
+        console.error('Sigma rendering error:', error, errorInfo);
     }
 
     render() {
@@ -29,4 +29,9 @@ class SigmaErrorBoundary extends Component<Props, State> {
     }
 }
 
-export default SigmaErrorBoundary;
+// Wrap for clean functional usage
+const SigmaErrorBoundary = ({ children, fallback }: Props) => {
+    return <SigmaErrorBoundaryClass fallback={fallback}>{children}</SigmaErrorBoundaryClass>;
+};
+
+export { SigmaErrorBoundary };
